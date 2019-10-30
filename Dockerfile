@@ -4,6 +4,7 @@ RUN apt-get update \
     && apt-get install --yes --no-install-recommends \
         golang-go \
         jq \
+        maven \
     && rm -rf /var/lib/apt/lists/*
 
 ENV GOPATH="/go"
